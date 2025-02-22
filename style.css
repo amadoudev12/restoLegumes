@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%;  */
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: rgb(48, 109, 149);
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+   background: #fdfbfb;
+}
+body{
+    transition: all 0.5s ease;
+    background: #fdfbfb;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: #fc08d7;
+}
+/* header css  */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rigth-menu,.left-menu{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rigth-menu li, .left-menu li{
+    padding: 10px;
+}
+.rigth-menu li a{
+    color: #f3efef;
+    font-weight: 600;
+    font-size: 18px;
+}
+.left-menu li a{
+    color: #fffcfc;
+    font-weight: 600;
+    font-size: 18px;
+}
+.rigth-menu li a:hover, .left-menu li a:hover{
+    color: rgb(176, 178, 180);
+}
+.boutique-name{
+    text-align: center;
+    flex-direction: column;
+}
+.boutique-name h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.boutique-name h4{
+    font-size: 15px;
+    color: rgb(222, 21, 48);
+    font-weight: 800;
+}
+#home{
+    /* position: relative; */
+    width: 100%;
+    height: calc(100vh - 150px);
+    background:linear-gradient(rgba(0, 0, 0, 0.612), rgba(0,0,0,0.1)), url(./images/acceuil.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.home-description{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.home-description h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.home-description h1{
+    color: #d9d5d5;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.gros-titres{
+    margin-bottom: 45px;
+}
+.home-description a{
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+}
+.home-description a:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s all ease;
+}
+.services{
+    padding: 20px 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.details-serv p{
+    font-weight: 800;
+}
+.tittle{
+    text-align: center;
+    padding-top:25px ;
+}
+.tittle h1{
+    color: #000000cb;
+    font-size: 30px;
+}
+.products-boxing{
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box-product{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.box-product .product-image{
+    height: 400px;
+    width: 300px;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+}
+.product-details .name-product h2{
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+    margin-bottom: 10px;
+}
+.product-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-price p{
+    font-size: 20px;
+    color: grey;
+}
+.see-more{
+    padding: 5px 15px;
+    background: rgba(227, 140, 185, 0.989);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.see-more:hover{
+    transition: all 0.5s ease;
+    background: #000;
+    color: hotpink;
+}
+#about-us{
+    margin-top: 20px;
+    padding: 50px 10%;
+    position: relative;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    box-shadow: 0 0 10px hotpink;
+}
+.card .bag{
+    width: 50%;
+    margin-right:50px;
+}
+.bag img{
+    width: 100%;
+    height: 100%;
+}
+.card .about-detail{
+    margin-left: 70px;
+}
+.about-detail h1{
+    padding: 15px;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: #181717;
+}
+.about-detail p{
+    margin-bottom: 15px;
+    color: #000;
+}
+.about-detail .client{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.client .client-image img{
+    border-radius: 40%;
+}
+.client p{
+    margin-left: 10px;
+    color: #000;
+}
+.about-detail a{
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+}
+.about-detail a:hover{
+    color: #fff;
+    background: hotpink;
+    transition: all 0.5s ease;
+}
+.profil{
+    margin-top: 20px;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+}
+.profil .image{
+    width: 20%;
+}
+.image img{
+    width: 100%;
+}
+.contact{
+    padding: 10px 5%;
+    margin-bottom: 20px;
+
+}
+.contact .contact-content{
+    height: 300px;
+    background: #eee9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-content h2{
+    text-align: center;
+    margin: 15px;
+    font-size: 25px;
+}
+.contact-content p{
+    margin: 15px;
+    font-size: 20px;
+    color: gray;
+}
+.input input{
+    margin-right:17px;
+   width: 500px;
+   height: 20px;
+   border: 0;
+   outline: 0;
+}
+.input button{
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    background: hotpink;
+}
+.input button:hover{
+    color: #f3efef;
+    background: #000;
+    transition: all 0.5s ease;
+}
+
+@media (max-width : 712px) {
+    .products-boxing{
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+    .about-us{
+        padding: 0;
+    }
+    .card{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        height: max-content;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+    }
+    .about-detail h1{
+        margin-bottom: 10px;
+    }
+    .services{
+        padding: 0;
+    }
+    /* .box-product .product-image{
+        height: 300px;
+        width: 200px;
+    } */
+    .product-details .name-product h2{
+        font-size:15px ;
+    }
+    .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input input{
+        margin: 0;
+       width: 400px;
+       height: 20px;
+       border: 0;
+       outline: 0;
+       margin-bottom: 15px;
+    }
+}
+@media (max-width : 585px){
+    body{
+        position: relative;
+    }
+    header{
+        position: relative;
+    }
+    .responsive-menu{
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .responsive-menu::after{
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        content: "";
+        background: #fff;
+        top: 20px;
+        left: 10px;
+        box-shadow: 0 10px 0 #fff;
+    }
+    .responsive-menu::before{
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        content: "";
+        background: #fff;
+        top: 40px;
+        left: 10px;
+    }
+    .rigth-menu{
+        flex-direction: column;
+        margin-bottom:15px ;
+    }
+    .boutique-name{
+        margin-bottom: 15px;
+    }
+    .boutique-name h1{
+        color: #fdfbfb;
+    }
+    .left-menu{
+        flex-direction: column;
+        margin-bottom:15px ;
+    }
+    .left-menu li a , .rigth-menu li a {
+        color: #131212;
+    }
+    .menu{
+        justify-content: center;
+        position: absolute;
+        height: 100vh;
+        width: 70%;
+        background: #fc08d7;
+        backdrop-filter: blur(8x);
+        z-index: 4;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+        left: -1700px;
+    }
+    .menu.active{
+        left: 0;
+    }
+}
+@media (max-width : 415px){
+    .services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv{
+        margin-bottom: 15px;
+    }
+    .input input{
+        margin: 0;
+       width: 300px;
+       height: 20px;
+       border: 0;
+       outline: 0;
+       margin-bottom: 15px;
+    }
+}
+@media (max-width : 320px){
+    .input input{
+        margin: 0;
+       width: 100%;
+       height: 20px;
+       border: 0;
+       outline: 0;
+       margin-bottom: 15px;
+    }
+    .see-more{
+        padding: 5px 10px;
+    }
+}
